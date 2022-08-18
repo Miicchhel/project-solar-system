@@ -1,3 +1,82 @@
-.App {
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background-image: url('./images/background.png');
+  color: white;
+}
+
+.h1, .h2 {
+  margin: 25px;
   text-align: center;
+}
+
+.h1 {
+  font-size: 4rem;
+}
+
+.h2 {
+  font-size: 2.5rem;
+}
+
+.container-planetas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: auto;
+}
+
+.planetas {
+  border: 2px solid #323232;
+  border-radius: 15px;
+  margin: 15px;
+  padding: 10px;
+  transition: background-color 500ms;
+}
+
+.planetas:hover {
+  background-color: #323232;
+}
+
+.planetas img {
+  height: 200px;
+  object-fit: contain;
+}
+
+.container-planetas p {
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.container-missoes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.missoes {
+  background-color: rgba(85, 44, 44, 0.438);
+  border-radius: 5px;
+  margin: 15px;
+  padding: 15px;
+  transition: background-color 500ms;
+  width: 200px;
+}
+
+.missoes:hover {
+  background-color: rgba(85, 44, 44, 0.89);
+}
+
+.missoes p {
+  font-size: 1.3rem;
+}
+
+.missoes p:nth-child( 1 ) {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 5px;
 }
